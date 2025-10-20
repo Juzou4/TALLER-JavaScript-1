@@ -11,4 +11,3 @@ var Serie = /** @class */ (function () {
     return Serie;
 }());
 export { Serie };
-//# sourceMappingURL=serie.js.map

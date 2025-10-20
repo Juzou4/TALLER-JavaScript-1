@@ -1,5 +1,5 @@
 import {Serie} from './serie.js';
-export const dataSeries:Serie[] =[
+export const dataSeries: Serie[]=[
     new Serie(1, 'El increíble mundo de Gumball', 'HBO', 5,
         'serie de animación británico-estadounidense de comedia familiar, caracterizada por su original mezcla de distintos elementos de animación y elementos reales, que fue creada por el francés Ben Bocquelet.',
         'https://es.wikipedia.org/wiki/The_Amazing_World_of_Gumball', 'https://i.pinimg.com/1200x/66/29/c1/6629c1952078c39d44bd2990f9ee7295.jpg'),
