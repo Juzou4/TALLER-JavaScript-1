@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taller TypeScript 1</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+</head>
+<body>
+    <!-- Aplicar bootstrap -->
+    <div class="container my-4">
+        <div class="row"></div>
+            <div class="col-md-7">
+    <!--  -->
+                
+    <h1 class="mb-4">Series de tv</h1>
+
+    <table class = "table table-striped table-hover">
+        <!--el thead dark es para que aparezca de negro la cabezera-->
+        <thead class ="thead-dark">
+            <tr>
+                <th>ID</th>
+                <th>Nombre</th>
+                <th>Canal</th>
+                <th>Temporadas</th>
+
+            </tr>
+        </thead>
+        <tbody id="series"></tbody>    
+    </table>
+
+    <div id="avg-seasons" class="font-weight-bold"></div>
+    </div>
+ 
+    <!-- aca estoy aplicando el typscript alno poner implicitamente la info sino que me la stou trayendo de otro archivo -->
+    <div class="col-md-5">
+        <div id= "detail-card" class="card d-none">   <!--d-none-->
+            <img id="detail-image" class="card-img-top d-none" alt="poster de la serie">
+            <div class="card-body">
+                <h5 id ="detail-title" class="card-title"></h5>
+                <p id="detail-description" class="card-text"></p>
+
+                <!-- Ahoa quiero que este oculta y cuanodo e le de al nombre aparezca la tarjeta, poreso uso el d-none -->
+                 <ul class="list-group list-group-flush mb-3">
+                    <li class="list-group-item"><strong>Canal:</strong> <span id="detail-channel"></span></li>
+                    <li class="list-group-item"><strong>Temporadas:</strong> <span id="detail-seasons"></span></li>
+                 </ul>
+
+                <a id="detail-link" href="#" class="btn btn-primary d-none" target="_blank" rel="noopener">Ver mas</a>
+                <button id ="detail-close" class="btn btn-secondary ml-2">Cerrar</button>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+
+    <!-- ahora queiero cargar los compilados que se cargaron en ewl modulo ES6 -->
+     <script type="module" src="./scripts/serie.js"></script>
+     <script type="module" src="./scripts/data.js"></script>
+     <script type="module" src="./scripts/main.js"></script>
+
+</body>
+</html>
